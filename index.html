@@ -22,7 +22,7 @@
 
 <script>
     async function loadModel() {
-        model = await tf.loadLayersModel('https://raw.githubusercontent.com/Constifox/st22-active-learn-trees/main/ai-model/model.json');
+        model = await tf.loadLayersModel('https://raw.githubusercontent.com/TechLabs-Berlin/st22-active-learn-trees/DL-Neural-Network/DL-neural-network/ai-model/model.json');
         console.log("model=" + model);
         const classifier_json = new URL('https://raw.githubusercontent.com/Constifox/st22-active-learn-trees/main/ai-model/class_definitions.json');
         const response = await fetch(classifier_json);
